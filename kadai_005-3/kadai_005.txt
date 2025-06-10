@@ -1,0 +1,37 @@
+PS C:\Users\Mtomo\OneDrive\デスクトップ\kadai_005-3> cd ~    
+PS C:\Users\Mtomo> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\Mtomo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/06/10     22:12                git_challenge
+
+
+PS C:\Users\Mtomo> cd git_challenge
+PS C:\Users\Mtomo\git_challenge> git init
+Initialized empty Git repository in C:/Users/Mtomo/git_challenge/.git/
+PS C:\Users\Mtomo\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\Mtomo\git_challenge> git add hello_world.txt
+PS C:\Users\Mtomo\git_challenge> git commit -m "追記：hello world!"
+[main (root-commit) 8802290] 追記：hello world!
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\Mtomo\git_challenge> git add hello_world.txt
+PS C:\Users\Mtomo\git_challenge> git commit -m "追記：こんにちは、世界！"
+[main 81bd8d9] 追記：こんにちは、世界！
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\Mtomo\git_challenge> git log
+commit 81bd8d95ac729f138de775da20bd09cfb820787d (HEAD -> main)
+Author: mattsu414 <matt25836@gmail.com>
+Date:   Tue Jun 10 22:28:14 2025 +0900
+
+    追記：こんにちは、世界！
+
+commit 88022900723d0deef9fc65948cb225208846c2ce
+Author: mattsu414 <matt25836@gmail.com>
+Date:   Tue Jun 10 22:22:32 2025 +0900
+
+    追記：hello world!
